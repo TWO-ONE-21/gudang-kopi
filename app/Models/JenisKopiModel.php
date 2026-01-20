@@ -6,13 +6,13 @@ use CodeIgniter\Model;
 
 class JenisKopiModel extends Model
 {
-    protected $table            = 'jeniskopi';
+    protected $table            = 'jenis_kopi';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['nama_jenis', 'deskripsi'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
