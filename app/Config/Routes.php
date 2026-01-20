@@ -18,5 +18,9 @@ $routes->group('', ['filter' => 'auth'], function($routes) {
     $routes->get('transaksi', 'Transaksi::index');
     $routes->get('transaksi/masuk', 'Transaksi::masuk');
     $routes->get('transaksi/keluar', 'Transaksi::keluar');
+    $routes->get('transaksi/keluar', 'Transaksi::keluar');
     $routes->post('transaksi/save', 'Transaksi::save');
+
+    $routes->get('laporan', 'Laporan::index');
+    $routes->get('laporan/cetak', 'Laporan::cetak');
 });

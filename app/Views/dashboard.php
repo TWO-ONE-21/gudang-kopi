@@ -16,7 +16,7 @@
           <h4>Total Produk</h4>
         </div>
         <div class="card-body">
-          10
+          <?= $total_produk ?>
         </div>
       </div>
     </div>
@@ -31,7 +31,7 @@
           <h4>Total Transaksi</h4>
         </div>
         <div class="card-body">
-          42
+          <?= $total_transaksi ?>
         </div>
       </div>
     </div>
@@ -46,7 +46,7 @@
           <h4>Stok Menipis</h4>
         </div>
         <div class="card-body">
-          5
+          <?= $stok_menipis ?>
         </div>
       </div>
     </div>
