@@ -20,17 +20,17 @@
         </ul>
       </li>
 
-      <li class="menu-header">Transactions</li>
-      <li class="dropdown <?= in_array(uri_string(), ['transactions/in', 'transactions/out']) ? 'active' : '' ?>">
-        <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i> <span>Transactions</span></a>
+      <li class="menu-header">Transaksi</li>
+      <li class="dropdown <?= in_array(uri_string(), ['transaksi/masuk', 'transaksi/keluar']) ? 'active' : '' ?>">
+        <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i> <span>Transaksi</span></a>
         <ul class="dropdown-menu">
-          <li class="<?= uri_string() == 'transactions/in' ? 'active' : '' ?>"><a class="nav-link" href="<?= base_url('transactions/in') ?>">Stock In</a></li>
-          <li class="<?= uri_string() == 'transactions/out' ? 'active' : '' ?>"><a class="nav-link" href="<?= base_url('transactions/out') ?>">Stock Out</a></li>
+          <li class="<?= uri_string() == 'transaksi/masuk' ? 'active' : '' ?>"><a class="nav-link" href="<?= base_url('transaksi/masuk') ?>">Barang Masuk</a></li>
+          <li class="<?= uri_string() == 'transaksi/keluar' ? 'active' : '' ?>"><a class="nav-link" href="<?= base_url('transaksi/keluar') ?>">Barang Keluar</a></li>
         </ul>
       </li>
 
-      <li class="menu-header">Reports</li>
-      <li class="<?= uri_string() == 'reports' ? 'active' : '' ?>"><a class="nav-link" href="<?= base_url('reports') ?>"><i class="far fa-file-alt"></i> <span>Reports</span></a></li>
+      <li class="menu-header">Laporan</li>
+      <li class="<?= uri_string() == 'laporan' ? 'active' : '' ?>"><a class="nav-link" href="<?= base_url('laporan') ?>"><i class="far fa-file-alt"></i> <span>Laporan</span></a></li>
     </ul>
   </aside>
 </div>

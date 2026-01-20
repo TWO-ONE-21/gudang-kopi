@@ -15,4 +15,8 @@ $routes->group('', ['filter' => 'auth'], function($routes) {
     $routes->resource('jenis-kopi', ['controller' => 'JenisKopi']);
     $routes->resource('suppliers', ['controller' => 'Supplier']);
     $routes->resource('products', ['controller' => 'Products']);
+    $routes->get('transaksi', 'Transaksi::index');
+    $routes->get('transaksi/masuk', 'Transaksi::masuk');
+    $routes->get('transaksi/keluar', 'Transaksi::keluar');
+    $routes->post('transaksi/save', 'Transaksi::save');
 });
