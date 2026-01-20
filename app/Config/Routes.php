@@ -13,4 +13,5 @@ $routes->get('logout', 'AuthController::logout');
 $routes->group('', ['filter' => 'auth'], function($routes) {
     $routes->get('dashboard', 'DashboardController::index');
     $routes->resource('jenis-kopi', ['controller' => 'JenisKopi']);
+    $routes->resource('suppliers', ['controller' => 'Supplier']);
 });

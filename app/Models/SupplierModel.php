@@ -6,13 +6,13 @@ use CodeIgniter\Model;
 
 class SupplierModel extends Model
 {
-    protected $table            = 'supplier';
+    protected $table            = 'suppliers';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = ['nama_supplier', 'telp', 'alamat'];
 
     protected bool $allowEmptyInserts = false;
     protected bool $updateOnlyChanged = true;
